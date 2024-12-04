@@ -1,5 +1,6 @@
 import os
 
+
 # Historian Hysteria
 
 def common():
@@ -22,6 +23,7 @@ def common():
 
     return left, right
 
+
 def part_1():
     distance = 0
     left, right = common()
@@ -31,11 +33,12 @@ def part_1():
 
     return distance
 
+
 def part_2():
     score = 0
     left, right = common()
 
     for i in range(0, len(left)):
         score += left[i] * right.count(left[i])
-        
+
     return score

@@ -1,5 +1,6 @@
 import os
 
+
 # Ceres Search
 
 def part_1():
@@ -87,9 +88,10 @@ def part_1_bis():
 
     for i in range(0, len(file_data)):
         counter += propagate(i, -1) + propagate(i, 1) + propagate(i, -(width + 1)) + propagate(i,
-                                                                                             (width + 1)) + propagate(i,
-                                                                                                                      -1 - (
-                                                                                                                                  width + 1)) + propagate(
+                                                                                               (width + 1)) + propagate(
+            i,
+            -1 - (
+                    width + 1)) + propagate(
             i, 1 - (width + 1)) + propagate(i, (width + 1) - 1) + propagate(i, (width + 1) + 1)
 
     return counter
